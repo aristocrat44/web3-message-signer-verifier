@@ -36,7 +36,7 @@ export const Connect = () => {
     <div className="flex flex-col items-center justify-center ">
       <CoreButton
         handleClick={onConnectClick}
-        disabled={isLoading || isAuthenticated}
+        disabled={isLoading}
         className="w-28 font-semibold"
       >
         {isLoading ? <Spinner /> : "Connect"}
