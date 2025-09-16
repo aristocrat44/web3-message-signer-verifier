@@ -27,6 +27,8 @@ export const Connect = () => {
     } catch (err) {
       console.error("Login failed:", err);
       setIsLoading(false);
+    } finally {
+      setIsLoading(false);
     }
   };
 

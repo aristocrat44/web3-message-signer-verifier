@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
-    "start": "next start",
+    "start": "node dist/app.js",
     "lint": "eslint",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest --coverage --no-watchman"
   },
