@@ -12,6 +12,8 @@ export const Connect = () => {
   const { handleLogin, isAuthenticated } = useAuth();
   const router = useRouter();
 
+  console.log("is loading ===>", isLoading);
+
   useEffect(() => {
     if (isAuthenticated) {
       setIsLoading(false);
